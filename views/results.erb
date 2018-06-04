@@ -6,4 +6,10 @@
 
 <h2>Consonants:<%=@analyzed_text.consonants %></h2>
 
-<h2>Most Common Letter:<%=@analyzed_text.consonants %>, used <%=@analyzed_text.consonants %> times</h2>
+<% @analyzed_text.
+<h2>Most Common Letter:<%@analyzed_text.consonants %>, used <%=@analyzed_text.consonants %> times</h2>
+
+
+<% @hash.each do |key, value| %>
+  <%=h "#{key.to_s} #{value.to_s}" %>
+<% end %>
